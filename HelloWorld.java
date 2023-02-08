@@ -8,9 +8,14 @@
 
 public final class HelloWorld {
     /**
-    * Placeholder function to prevent HideUtilityClass Error.
+    * Neccessary to prevent HideUtilityClass Error.
+    *
+    *
+    * @exception IllegalStateException Utility class
+    * @see IllegalStateException
     */
-    private void placeHolder() {
+    private HelloWorld() {
+        throw new IllegalStateException("Utility class");
     }
 
     /**
